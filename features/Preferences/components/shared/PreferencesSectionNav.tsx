@@ -6,6 +6,7 @@ import { cn } from '@/shared/lib/utils';
 import { Joystick, Palette, Wand2 } from 'lucide-react';
 
 const ACTIVE_SECTION_OFFSET = 156;
+const SCROLL_TIMEOUT_MS = 350;
 
 type SectionId = 'behavior' | 'display' | 'effects';
 
@@ -33,16 +34,16 @@ const sections: SectionItem[] = [
   },
 ];
 
+const getSectionElements = () =>
+  sections
+    .map(section => document.getElementById(section.id))
+    .filter((element): element is HTMLElement => Boolean(element));
+
 const PreferencesSectionNav = () => {
   const [activeSection, setActiveSection] = useState<SectionId>('behavior');
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
-
-    const getSectionElements = () =>
-      sections
-        .map(section => document.getElementById(section.id))
-        .filter((element): element is HTMLElement => Boolean(element));
 
     const updateActiveSection = () => {
       const sectionElements = getSectionElements();
@@ -56,15 +57,17 @@ const PreferencesSectionNav = () => {
         );
       });
 
-      const nextActiveSection = sectionAtOffset
+      const lastSectionAboveOffset = sectionElements
+        .filter(
+          sectionElement =>
+            sectionElement.getBoundingClientRect().top <= ACTIVE_SECTION_OFFSET,
+        )
+        .at(-1);
+
+      const nextActiveSection: SectionId = sectionAtOffset
         ? (sectionAtOffset.id as SectionId)
-        : sectionElements
-            .filter(
-              sectionElement =>
-                sectionElement.getBoundingClientRect().top <=
-                ACTIVE_SECTION_OFFSET,
-            )
-            .at(-1)?.id || (sectionElements[0].id as SectionId);
+        : ((lastSectionAboveOffset?.id as SectionId | undefined) ??
+          (sectionElements[0].id as SectionId));
 
       setActiveSection(currentSection =>
         currentSection === nextActiveSection
@@ -82,6 +85,23 @@ const PreferencesSectionNav = () => {
       window.removeEventListener('resize', updateActiveSection);
     };
   }, []);
+
+  const handleNavigate = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    sectionId: SectionId,
+  ) => {
+    event.preventDefault();
+
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+
+    setActiveSection(sectionId);
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    window.setTimeout(() => {
+      window.history.replaceState(null, '', `#${sectionId}`);
+    }, SCROLL_TIMEOUT_MS);
+  };
 
   return (
     <div className='sticky top-2 z-40'>
@@ -106,7 +126,7 @@ const PreferencesSectionNav = () => {
                 )}
                 <a
                   href={`#${section.id}`}
-                  onClick={() => setActiveSection(section.id)}
+                  onClick={event => handleNavigate(event, section.id)}
                   className={cn(
                     'relative z-10 flex w-full cursor-pointer items-center justify-center gap-2 rounded-2xl px-3 pt-2 pb-4 text-sm font-semibold no-underline transition-colors duration-300 sm:px-5',
                     isSelected
