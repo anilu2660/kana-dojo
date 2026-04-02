@@ -116,13 +116,13 @@
   {
     "id": 20,
     "fact": "The word 'karoshi' (過労死) meaning 'death from overwork' is so prevalent that it's recognized as a legal cause of death with compensated claims.",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
     "id": 21,
     "fact": "Japan's oldest company, Kongō Gumi, was a construction company that operated continuously for 1,428 years (578-2006 CE) before being absorbed.",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -206,7 +206,7 @@
   {
     "id": 35,
     "fact": "The word 'hikikomori' (引きこもり) describes people who withdraw completely from society, sometimes staying in their rooms for years.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -410,7 +410,7 @@
   {
     "id": 69,
     "fact": "The Japanese word 'koi no yokan' (恋の予感) describes knowing you'll inevitably fall in love with someone you just met.",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -446,7 +446,7 @@
   {
     "id": 75,
     "fact": "The word 'enryo' (遠慮) describes polite restraint - like declining seconds even when hungry, to not be a burden.",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -500,19 +500,19 @@
   {
     "id": 84,
     "fact": "Japan has 'crying rooms' in some theaters where parents can watch movies with babies without disturbing other viewers.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
     "id": 85,
     "fact": "The word 'otsukaresama' (お疲れ様) literally means 'you're tired' but is used to acknowledge someone's hard work.",
     "issued": false,
-    "completed": true
+    "completed": false
   },
   {
     "id": 86,
     "fact": "Japan has had the same family on the Chrysanthemum Throne for over 2,600 years - the world's oldest continuous hereditary monarchy.",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -620,7 +620,7 @@
   {
     "id": 104,
     "fact": "Japan has train 'pushers' (oshiya) whose job is to physically push passengers into overcrowded trains during rush hour.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -638,7 +638,7 @@
   {
     "id": 107,
     "fact": "There's a Japanese concept 'omoiyari' (思いやり) meaning sensitivity to others' feelings - anticipating needs before they're expressed.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -776,19 +776,19 @@
   {
     "id": 130,
     "fact": "Japan has a toilet museum in Kitakyushu where you can slide down a giant toilet and learn about sewage history.",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
     "id": 131,
     "fact": "There's a Japanese practice 'dogeza' (土下座) - bowing with forehead to floor - the deepest apology or request possible.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
     "id": 132,
     "fact": "Japan has 'gacha' machines that dispense random collectible toys for 100-500 yen - adults are as obsessed as children.",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -801,12 +801,12 @@
     "id": 134,
     "fact": "Japan has 'standing sleeping' car handles on trains designed for exhausted commuters to rest their heads during travel.",
     "issued": false,
-    "completed": true
+    "completed": false
   },
   {
     "id": 135,
     "fact": "There's a Japanese concept 'itadakimasu' (いただきます) - said before eating - acknowledging all who contributed to the meal.",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -824,13 +824,13 @@
   {
     "id": 138,
     "fact": "Japan has 'para-para' dancing - a synchronized hand-waving dance performed to eurobeat in nightclubs since the 1980s.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
     "id": 139,
     "fact": "There's a Japanese practice 'sekihan' (赤飯) - eating red rice with beans on celebratory occasions, from birthdays to promotions.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -854,7 +854,7 @@
   {
     "id": 143,
     "fact": "There's a Japanese word 'giri' (義理) for social obligation - you give gifts and attend events because you must, not because you want to.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -878,7 +878,7 @@
   {
     "id": 147,
     "fact": "There's a Japanese word 'tasogare' (黄昏) specifically for the golden hour at dusk when it's hard to recognize faces.",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -1046,7 +1046,7 @@
   {
     "id": 175,
     "fact": "There's a Japanese word 'waku-waku' (わくわく) for excited anticipation - the tingly feeling of looking forward to something.",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -1082,7 +1082,7 @@
   {
     "id": 181,
     "fact": "The word 'kimochi' (気持ち) describes feelings so physical you can sense them in your body - mood embodied.",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -1136,7 +1136,7 @@
   {
     "id": 190,
     "fact": "Japan has 'lucky bags' (fukubukuro) sold on New Year's - sealed bags of discount mystery items worth more than the price.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1202,7 +1202,7 @@
   {
     "id": 201,
     "fact": "Japan has a word 'tsundoku' (積ん読) for buying books and letting them pile up unread.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1226,7 +1226,7 @@
   {
     "id": 205,
     "fact": "Japan has 'eki-stamps' (駅スタンプ) — collectible rubber stamps at train stations that travelers gather like a passport.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1292,7 +1292,7 @@
   {
     "id": 216,
     "fact": "The Japanese term 'shuudan ishiki' (集団意識) refers to strong group consciousness — prioritizing harmony within the group.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1334,7 +1334,7 @@
   {
     "id": 223,
     "fact": "Japan’s 'onsen' hot springs often have specific etiquette, including washing thoroughly before entering the bath.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1478,7 +1478,7 @@
   {
     "id": 247,
     "fact": "Japan’s 'michi-no-eki' (道の駅) are highway rest stops that double as local farmers’ markets and souvenir hubs.",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -1508,13 +1508,13 @@
   {
     "id": 252,
     "fact": "The Japanese word 'kotodama' (言霊) means 'spirit of words' — the belief that words have power and influence outcomes.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
     "id": 253,
     "fact": "Japan’s 'tachigui' culture means quick standing meals at noodle or sushi counters, especially around busy train stations.",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -1556,7 +1556,7 @@
   {
     "id": 260,
     "fact": "The Japanese word 'shitsurai' (設え) means arranging a space thoughtfully — from seasonal decor to the placement of tea utensils.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1658,7 +1658,7 @@
   {
     "id": 277,
     "fact": "Japan’s 'pocket tissues' are commonly handed out on streets as tiny promotional giveaways for shops or services.",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -1706,7 +1706,7 @@
   {
     "id": 285,
     "fact": "Japan’s 'hashioki' are chopstick rests, and many restaurants choose seasonal or themed designs.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1754,7 +1754,7 @@
   {
     "id": 293,
     "fact": "Japan has a tradition called 'hajimete no omiyage' where travelers bring their first souvenir to share with family or coworkers.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1820,7 +1820,7 @@
   {
     "id": 304,
     "fact": "Japan’s 'hanami' tradition often includes picnic mats, bento boxes, and seasonal sweets under the cherry trees.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
